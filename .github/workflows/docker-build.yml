@@ -3,6 +3,9 @@ name: Build Multi-Arch Docker Image
 on:
   repository_dispatch:
     types: [trigger-build]
+   push:
+    branches:
+      - master
 
 jobs:
   build:
