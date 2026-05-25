@@ -1,0 +1,2 @@
+# Fires the daikin-web-control timer worker every minute
+* * * * * root /usr/local/bin/php /daikin-web-control/timer_worker.php >> /var/log/daikin-timer.log 2>&1

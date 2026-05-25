@@ -31,6 +31,16 @@ fi
 if [ "${REFRESH_INTERVAL}" != "" ]; then
 	sed -i "s/2000/${REFRESH_INTERVAL}/g" config.js
 fi
+if [ "${ENABLE_TIMER}" = "false" ]; then
+	sed -i "s/enableTimer: true/enableTimer: false/g" config.js
+fi
+
+mkdir -p data
+chmod 0775 data
+
+if [ "${ENABLE_TIMER}" != "false" ]; then
+	cron
+fi
 
 # run the php server
 exec php -S 0.0.0.0:80

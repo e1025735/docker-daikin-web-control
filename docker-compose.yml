@@ -8,3 +8,8 @@ services:
       - "8000:80"
     environment:
       UNIT_1_IP: 192.168.1.10
+    volumes:
+      - daikin-data:/daikin-web-control/data
+
+volumes:
+  daikin-data:
