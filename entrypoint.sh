@@ -34,6 +34,9 @@ fi
 if [ "${ENABLE_TIMER}" = "false" ]; then
 	sed -i "s/enableTimer: true/enableTimer: false/g" config.js
 fi
+if [ "${SHOW_SPINNER}" = "true" ]; then
+	sed -i "s/showSpinner: false/showSpinner: true/g" config.js
+fi
 
 mkdir -p data
 chmod 0775 data

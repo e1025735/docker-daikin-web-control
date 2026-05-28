@@ -5,19 +5,20 @@ Starts a php internal webserver running the web_gui code from https://github.com
 Configurations
 ----------
 
-| Variable name    | Description                                                                                             | Example value    |
-|------------------|---------------------------------------------------------------------------------------------------------|------------------|
-| UNIT_1_IP        | IP address of the first AC unit                                                                         | "192.168.1.10"   |
-| UNIT_1_NAME      | Name of the first AC unit                                                                               | "Bed room"       |
-| UNIT_1_ICON      | Icon for the first AC unit (only useful if there is more then one AC unit)                              | "fa-bed"         |
-| UNIT_2_IP        | IP address of the second AC unit                                                                        | "192.168.1.11"   |
-| UNIT_2_NAME      | Name of the second AC unit                                                                              | "Living room"    |
-| UNIT_2_ICON      | Icon for the second AC unit                                                                             | "fa-tv"          |
-| UNIT_3_IP        | IP address of the third AC unit                                                                         | "192.168.1.12"   |
-| UNIT_3_NAME      | Name of the third AC unit                                                                               | "Kitchen"        |
-| UNIT_3_ICON      | Icon for the third AC unit                                                                              | "fa-kitchen-set" |
-| REFRESH_INTERVAL | The interval between refreshing the data of the AC unit (in milliseconds)                               | 2000             |
-| ENABLE_TIMER     | Switch for the ON/OFF timer feature. Set to `false` if you don't want this feature. Defaults to `true`. | "false"          |
+| Variable name    | Description                                                                                                          | Example value    |
+|------------------|----------------------------------------------------------------------------------------------------------------------|------------------|
+| UNIT_1_IP        | IP address of the first AC unit                                                                                      | "192.168.1.10"   |
+| UNIT_1_NAME      | Name of the first AC unit                                                                                            | "Bed room"       |
+| UNIT_1_ICON      | Icon for the first AC unit (only useful if there is more then one AC unit)                                           | "fa-bed"         |
+| UNIT_2_IP        | IP address of the second AC unit                                                                                     | "192.168.1.11"   |
+| UNIT_2_NAME      | Name of the second AC unit                                                                                           | "Living room"    |
+| UNIT_2_ICON      | Icon for the second AC unit                                                                                          | "fa-tv"          |
+| UNIT_3_IP        | IP address of the third AC unit                                                                                      | "192.168.1.12"   |
+| UNIT_3_NAME      | Name of the third AC unit                                                                                            | "Kitchen"        |
+| UNIT_3_ICON      | Icon for the third AC unit                                                                                           | "fa-kitchen-set" |
+| REFRESH_INTERVAL | The interval between refreshing the data of the AC unit (in milliseconds)                                            | 2000             |
+| ENABLE_TIMER     | Switch for the ON/OFF timer feature. Set to `false` if you don't want this feature. Defaults to `true`.              | "false"          |
+| SHOW_SPINNER     | Switch for showing when the data from AC is refreshed. Set to `true` if you want this feature. Defaults to `false`.  | "true"           |
 
 If there is only one AC unit the second and third unit data must not be set and the web gui will adapt to this. The same
 is true if "only" two AC units are defined.
